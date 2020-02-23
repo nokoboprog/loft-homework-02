@@ -4,10 +4,10 @@ require_once('src/functions.php');
 //Задание #1
 
 echo '<b>Задание #1</b><br>';
-$array = ['example_string1', 'example_string2', 'example_string3'];
+$strings = ['example_string1', 'example_string2', 'example_string3'];
 
-task1($array);
-echo task1($array, true);
+task1($strings);
+echo task1($strings, true);
 echo '<br><br>';
 
 //Задание #2

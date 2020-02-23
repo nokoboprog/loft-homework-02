@@ -2,13 +2,13 @@
 
 //Задание #1
 
-function task1(array $arr, $mark = false)
+function task1(array $strings, $glue = false)
 {
-    if ($mark === true) {
-        return implode(' ', $arr);
+    if ($glue === true) {
+        return implode(' ', $strings);
     }
 
-    foreach ($arr as $str) {
+    foreach ($strings as $str) {
         echo "<p>$str</p>";
     }
 }
@@ -47,7 +47,7 @@ function task2($operator, ...$args)
     }
 
     if ($result) {
-        echo "Результат($operator): $result";
+        echo implode(" $operator ", $args) . " = $result";
     }
 }
 
